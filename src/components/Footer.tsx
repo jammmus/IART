@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const exploreLinks = [
   { label: "Live scores", href: "#live-scores" },
   { label: "Schedule", href: "#schedule" },
@@ -11,7 +13,23 @@ export default function Footer() {
       <div className="mx-auto">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
-            <p className="font-display text-lg font-medium text-cream">
+            <div className="flex flex-wrap items-center gap-5">
+              <Image
+                src="/brand/iart-logo.svg"
+                alt="International Ahmadiyya Racquetball Tournament logo"
+                width={72}
+                height={72}
+                className="h-[72px] w-[72px] shrink-0"
+              />
+              <Image
+                src="/brand/amj-logo.svg"
+                alt="Ahmadiyya Muslim Jama'at Canada logo"
+                width={200}
+                height={63}
+                className="h-14 w-auto"
+              />
+            </div>
+            <p className="font-display mt-5 text-lg font-medium text-cream">
               International Ahmadiyya
               <br />
               Racquetball Tournament

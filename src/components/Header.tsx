@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = [
   { label: "Live scores", href: "#live-scores" },
   { label: "Schedule", href: "#schedule" },
@@ -12,9 +14,21 @@ export default function Header() {
         <a
           href="#top"
           title="Back to top"
-          className="whitespace-nowrap text-sm font-semibold uppercase tracking-[0.18em] text-cream transition-colors duration-200 hover:text-terracotta"
+          className="flex shrink-0 items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] text-cream transition-colors duration-200 hover:text-terracotta"
         >
-          International Art 2026
+          <Image
+            src="/brand/iart-logo.svg"
+            alt="International Ahmadiyya Racquetball Tournament logo"
+            width={48}
+            height={48}
+            priority
+            className="h-9 w-9 sm:h-12 sm:w-12"
+          />
+          <span className="text-[10px] leading-tight sm:text-sm">
+            International Ahmadiyya
+            <br />
+            Racketball Tournament 2026
+          </span>
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">

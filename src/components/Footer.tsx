@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/base-path";
 
 const exploreLinks = [
   { label: "Live scores", href: "#live-scores" },
@@ -15,14 +16,14 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap items-center gap-5">
               <Image
-                src="/brand/iart-logo.svg"
+                src={`${basePath}/brand/iart-logo.svg`}
                 alt="International Ahmadiyya Racquetball Tournament logo"
                 width={72}
                 height={72}
                 className="h-[72px] w-[72px] shrink-0"
               />
               <Image
-                src="/brand/amj-logo.svg"
+                src={`${basePath}/brand/amj-logo.svg`}
                 alt="Ahmadiyya Muslim Jama'at Canada logo"
                 width={200}
                 height={63}

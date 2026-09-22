@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "@/lib/base-path";
 
 const navLinks = [
   { label: "Live scores", href: "#live-scores" },
@@ -17,7 +18,7 @@ export default function Header() {
           className="flex shrink-0 items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] text-cream transition-colors duration-200 hover:text-terracotta"
         >
           <Image
-            src="/brand/iart-logo.svg"
+            src={`${basePath}/brand/iart-logo.svg`}
             alt="International Ahmadiyya Racquetball Tournament logo"
             width={48}
             height={48}

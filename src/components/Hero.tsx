@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { basePath } from "@/lib/base-path";
+
 function CalendarIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 shrink-0">
@@ -72,19 +75,22 @@ export default function Hero() {
         </div>
 
         <div className="relative min-h-[320px] overflow-hidden bg-forest lg:min-h-[560px]">
-          <svg
-            className="absolute inset-0 h-full w-full"
-            preserveAspectRatio="none"
-            viewBox="0 0 100 100"
-          >
-            <line x1="0" y1="70" x2="100" y2="15" stroke="#ffffff33" strokeWidth="0.4" />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center p-10">
-            <div className="flex h-56 w-56 -rotate-6 items-center justify-center rounded-full bg-terracotta text-center shadow-2xl sm:h-64 sm:w-64">
-              <p className="font-display rotate-6 px-6 text-2xl leading-snug font-medium text-cream sm:text-3xl">
-                Play with purpose.
-              </p>
-            </div>
+          <Image
+            src={`${basePath}/images/hero.webp`}
+            alt="Players competing in table tennis, badminton, squash and tennis"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/50 via-transparent to-transparent"
+          />
+          <div className="absolute right-5 bottom-5 flex h-28 w-28 -rotate-6 items-center justify-center rounded-full bg-terracotta text-center shadow-2xl sm:h-36 sm:w-36">
+            <p className="font-display rotate-6 px-3 text-base leading-snug font-medium text-cream sm:text-xl">
+              Play with purpose.
+            </p>
           </div>
         </div>
       </div>

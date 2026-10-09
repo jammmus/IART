@@ -4,6 +4,7 @@ import { basePath } from "@/lib/base-path";
 const exploreLinks = [
   { label: "Live scores", href: "#live-scores" },
   { label: "Schedule", href: "#schedule" },
+  { label: "Teams & draw", href: "#draw" },
   { label: "Sports", href: "#sports" },
   { label: "Gallery", href: "#gallery" },
 ];

@@ -4,6 +4,7 @@ import { basePath } from "@/lib/base-path";
 const navLinks = [
   { label: "Live scores", href: "#live-scores" },
   { label: "Schedule", href: "#schedule" },
+  { label: "Teams & draw", href: "#draw" },
   { label: "Sports", href: "#sports" },
   { label: "Gallery", href: "#gallery" },
 ];
@@ -11,11 +12,11 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--hairline)] bg-[var(--ink)]/95 backdrop-blur">
-      <div className="mx-auto flex items-center justify-between gap-6 px-6 py-4 lg:px-10">
+      <div className="mx-auto flex items-center justify-between gap-3 px-6 py-4 sm:gap-6 lg:px-10">
         <a
           href="#top"
           title="Back to top"
-          className="flex shrink-0 items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] text-cream transition-colors duration-200 hover:text-terracotta"
+          className="flex min-w-0 items-center gap-3 text-sm font-semibold uppercase tracking-[0.1em] text-cream transition-colors duration-200 hover:text-terracotta sm:shrink-0 sm:tracking-[0.18em]"
         >
           <Image
             src={`${basePath}/brand/iart-logo.svg`}
@@ -23,7 +24,7 @@ export default function Header() {
             width={48}
             height={48}
             priority
-            className="h-9 w-9 sm:h-12 sm:w-12"
+            className="h-9 w-9 shrink-0 sm:h-12 sm:w-12"
           />
           <span className="text-[10px] leading-tight sm:text-sm">
             International Ahmadiyya

@@ -18,8 +18,8 @@ export const teams: Team[] = [
   { id: 5, name: "Canada Royal", swatch: "#4466e0" },
   { id: 6, name: "Jamia Canada Grey", swatch: "#9aa5a0" },
   { id: 7, name: "Jamia Canada Purple", swatch: "#8a5bb5" },
-  { id: 8, name: "UK" },
-  { id: 9, name: "Norway" },
+  { id: 8, name: "UK", swatch: "#e0a526" },
+  { id: 9, name: "Norway", swatch: "#4cc3e8" },
 ];
 
 const fixtures: [number, number][] = [

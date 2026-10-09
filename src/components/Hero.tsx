@@ -64,13 +64,6 @@ export default function Hero() {
             >
               Register now
             </a>
-            <a
-              href="#live-scores"
-              title="Jump to live scores"
-              className="cursor-pointer rounded-full border border-[var(--hairline)] px-6 py-3 text-sm font-medium text-cream transition-colors duration-200 hover:border-cream/40 hover:bg-white/5"
-            >
-              View live scores
-            </a>
           </div>
         </div>
 

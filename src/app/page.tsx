@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import LiveScores from "@/components/LiveScores";
-import Schedule from "@/components/Schedule";
 import TeamsDraw from "@/components/TeamsDraw";
 import Sports from "@/components/Sports";
 import Gallery from "@/components/Gallery";
@@ -15,8 +13,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <LiveScores />
-        <Schedule />
         <TeamsDraw />
         <Sports />
         <Gallery />
